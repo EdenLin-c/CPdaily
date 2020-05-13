@@ -14,7 +14,7 @@ html1: http://id.学校的英文缩写.edu.cn/authserver/login?
 
 html2: https://ids.学校的英文缩写.edu.cn/authserver/login?
 
-如果全部失败，尝试通过知网：https://fsso.cnki.net 查找对应学校网址，然后在下方的修改loginUrl即可（只需要改根URL）  
+如果全部失败，尝试通过知网：https://fsso.cnki.net 查找对应学校网址，然后在脚本内的修改loginUrl即可（只需要改根URL）  
 
 
 ## 需要安装的py依赖库如下:
