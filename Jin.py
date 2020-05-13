@@ -176,7 +176,7 @@ class Report:
 
     def Main(self):
         print('------------')
-        for name in range(len(self.xh1)-1):
+        for name in range(len(self.xh1)):
             self.xh = self.xh1[name]
             print('Doing Job Number:{}'.format(self.xh))
             self.pwd = self.pwd1[name]
