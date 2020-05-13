@@ -46,7 +46,7 @@ class Report:
         #----------------------------------------------------------# 
 
     def Get_cookies(self):
-        loginUrl = 'https://ids.'+self.schoolSignal+'.edu.cn/authserver/login?service=https%3A%2F%'+self.schoolSignal+'.cpdaily.com%2Fportal%2Flogin'
+        loginUrl = 'https://ids.'+self.schoolSignal+'.edu.cn/authserver/login?service=https%3A%2F%2F'+self.schoolSignal+'.cpdaily.com%2Fportal%2Flogin'
         aes_chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678'
         aes_chars_len = len(aes_chars)
         def randomString(len):
@@ -80,7 +80,7 @@ class Report:
         try:
             login_html = server.get(loginUrl, headers=headers).text
         except:
-            loginUrl = 'id.'+self.schoolSignal+'.edu.cn/authserver/login?service=https%3A%2F%'+self.schoolSignal+'.cpdaily.com%2Fportal%2Flogin'
+            loginUrl = 'http://id.'+self.schoolSignal+'.edu.cn/authserver/login?service=https%3A%2F%2F'+self.schoolSignal+'.cpdaily.com%2Fportal%2Flogin%27'
             login_html = server.get(loginUrl, headers=headers).text
             
         html = etree.HTML(login_html)
